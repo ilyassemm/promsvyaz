@@ -28,7 +28,7 @@
       </li>
 
       <li class="nav-item signin">
-        <a class="nav-link signin" href="#">Вход</a>
+        <a class="nav-link signin" href="/signin">Вход</a>
       </li>
 
     </ul>
@@ -47,8 +47,13 @@
     <a class = 'nav-link' href="https://github.com/ilyassemm/PSB.git">Github</a>
   </div>
 </footer>
-</template>
 <!--Footer-->
+</template>
+
+<script>
+/* eslint-disable */
+</script>
+
 
 <style>
  .b1, .b2, .b3 {

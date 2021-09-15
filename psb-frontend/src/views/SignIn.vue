@@ -22,6 +22,7 @@
 .columns {
    text-align:-moz-center;
    display: inline list-item;
+   font-family: 'Arial', sans-serif;
 }
 
 .column {

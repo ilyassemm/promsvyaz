@@ -2,14 +2,13 @@
 <div class='mainpage'>
 <!--Header-->
 <header>
-<nav class="navbar navbar-expand-lg sm-2">
-  <a class="navbar-brand" href="/">
-  <img src="https://i.ibb.co/NYyTVWt/PSB-logo-white-png.png" alt="PSB-logo-white-png" border="0">
-
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg sm-2">
+   <a class="navbar-brand" href="/">
+    <img src="@/assets/PSB_logo_white_png.png" alt="PSB-logo-white-png" >
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon">≡</span>
-  </button>
+   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -31,9 +30,9 @@
         <a class="nav-link signin" href="/signin">Вход</a>
       </li>
 
-    </ul>
-  </div>
-</nav>
+     </ul>
+   </div>
+  </nav>
 </header>
 <!--Header-->
 
@@ -44,7 +43,7 @@
 <footer class=" text-center text-lg-start">
   <div class="text-center p-3">
     2021 © Прототип разработан командой Cogwheel для ПСБ:
-    <a class = 'nav-link' href="https://github.com/ilyassemm/PSB.git">Github</a>
+    <a class = 'nav-link github' href="https://github.com/ilyassemm/PSB.git">Github</a>
   </div>
 </footer>
 <!--Footer-->
@@ -64,13 +63,12 @@
     transition: 0.3s;
 }
 .navbar-toggler {
-background-color: aliceblue !important;
+   background-color: transparent !important;
 }
 
 .navbar-toggler-icon {
-color:black !important;
-font-size: 100%;
-display:ruby;
+  color: aliceblue;
+  font-size: 300%;
 }
 header {
    width:100%;
@@ -82,8 +80,8 @@ nav {
    font-weight: 400;
 }
 img {
-   width:90px;
-   height:90px;
+   width:141px;
+   height:100px;
    display:inline-block;
 }
 .nav-link {
@@ -113,18 +111,24 @@ transition: width 0.4s ease-in-out; /*данное свойство отвеча
 }
 .nav-link:hover:after,
 .nav-link:focus:after {
-width: 100%;
+   width: 100%;
 }
 .nav-link:hover{
 color:white;
 }
 
 .signin {
-   margin-left:15rem;
+  margin-left: 25rem;
+}
+.github{
+  width: 75px;
+  margin-left: 45rem;
 }
 
 footer {
    background-color: #323242 !important;
    color:white;
 }
+
+
 </style>

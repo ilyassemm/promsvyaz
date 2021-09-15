@@ -7,3 +7,4 @@ local_settings.py
 back_venv/
 .env
 db.sqlite3
+.vscode/

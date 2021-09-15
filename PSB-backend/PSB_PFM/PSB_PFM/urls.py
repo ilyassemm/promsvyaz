@@ -14,10 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path, include
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('rest_auth.urls')),
+=======
+from django.urls import path
+from mainapp.views import chisto_pod_exsel
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('chist_pod_exsel/',chisto_pod_exsel)
+>>>>>>> 7671f03 (pars bd)
 ]

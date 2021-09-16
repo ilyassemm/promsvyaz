@@ -39,12 +39,33 @@ INSTALLED_APPS = [
     'rest_auth',
     'pandas',
     'mainapp',
+    'rest_framework.authtoken',
+
+    'corsheaders',
     
+]
+
+CORS_ALLOWED_ORIGINS = [ 
+    "http://localhost:8080",
+]
+
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:8080",
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

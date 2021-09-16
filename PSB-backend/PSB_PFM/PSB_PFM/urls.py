@@ -22,5 +22,5 @@ from mainapp.views import chisto_pod_exsel
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('rest_auth.urls')),
-    path('chist_pod_exsel/',chisto_pod_exsel)
-
+    path('chist_pod_exsel/',chisto_pod_exsel), 
+]

@@ -55,13 +55,6 @@
 
 
 <style>
- .b1, .b2, .b3 {
-    width: 36px;
-    height: 5px;
-    background-color: black;
-    margin: 5px 0;
-    transition: 0.3s;
-}
 .navbar-toggler {
    background-color: transparent !important;
 }
@@ -115,14 +108,6 @@ transition: width 0.4s ease-in-out; /*данное свойство отвеча
 }
 .nav-link:hover{
 color:white;
-}
-
-.signin {
-  margin-left: 25rem;
-}
-.github{
-  width: 75px;
-  margin-left: 45rem;
 }
 
 footer {

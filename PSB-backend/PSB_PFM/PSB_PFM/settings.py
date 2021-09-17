@@ -40,10 +40,21 @@ INSTALLED_APPS = [
     'pandas',
     'mainapp',
     'rest_framework.authtoken',
+    'django_filters',
 
     'corsheaders',
     
 ]
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+    ),
+}
 
 CORS_ALLOWED_ORIGINS = [ 
     "http://localhost:8080",

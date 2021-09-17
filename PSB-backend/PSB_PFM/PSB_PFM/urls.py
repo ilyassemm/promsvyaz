@@ -17,10 +17,11 @@ from django.contrib import admin
 
 from django.urls import path, include
 from django.conf import settings
-from mainapp.views import chisto_pod_exsel
+from mainapp.views import chisto_pod_exsel, test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('rest_auth.urls')),
     path('chist_pod_exsel/',chisto_pod_exsel), 
+    path('analysis/<int:id>/',test)
 ]

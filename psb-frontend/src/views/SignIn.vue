@@ -29,11 +29,13 @@ export default {
   methods: {
         async submitForm() {
             axios.defaults.headers.common["Authorization"] = ""
+	    
             localStorage.removeItem("token") 
             const formData = {
                 username: this.username,
                 password: this.password
             }
+            localStorage.setItem('id', this.username)
             await axios
                 .post("/auth/login/", formData)
                 .then(response => {
@@ -69,8 +71,8 @@ export default {
 <style>
 .columns {
    text-align:-moz-center;
-   display: inline list-item;
    font-family: 'Arial', sans-serif;
+   margin: 10rem auto 10rem auto;
 }
 
 .column {
@@ -81,5 +83,6 @@ export default {
 form {
    margin: 0 auto;
 }
+
 
 </style>

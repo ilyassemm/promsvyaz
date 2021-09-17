@@ -43,7 +43,7 @@
 <footer class=" text-center text-lg-start">
   <div class="text-center p-3">
     2021 © Прототип разработан командой Cogwheel для ПСБ:
-    <a class = 'nav-link github' href="https://github.com/ilyassemm/PSB.git">Github</a>
+    <a class = 'nav-link github' href="https://github.com/ilyassemm/promsvyaz.git">Github</a>
   </div>
 </footer>
 <!--Footer-->

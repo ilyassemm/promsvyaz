@@ -11,6 +11,12 @@
 </div>
 </div>
 
+<div v-for="links in Result" :key="links" class="col-sm-2 recomendations">
+<div class="btn-group">
+{{links}} <br>
+</div>
+</div>
+
             <div class="column is-12 profile_button">
                 <button @click="logout()" class="button btn btn-danger">Выйти из аккаунта</button>
             </div>

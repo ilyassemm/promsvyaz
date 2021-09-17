@@ -1,5 +1,9 @@
 <template>
     <div class="page-profile">
+<div class='greeting'>
+   <p>Здравствуйте, пользователь с id {{ APIData.ID }}!</p>
+</div>
+
             <div class="column is-12 profile_button">
                 <button @click="logout()" class="button btn btn-danger">Выйти из аккаунта</button>
             </div>
@@ -15,7 +19,9 @@ export default {
     name: 'Profile',
 
     data() {
-        return {}
+        return {
+        APIData: []
+}
 },
     mounted() {
         document.title = 'ПромСвязьБанк| Профиль пользователя'
@@ -28,7 +34,24 @@ export default {
             localStorage.removeItem("id")
             this.$router.push('/')
             document.title = 'ПромСвязьБанк'
-        }
+        },
+	show_info() {
+	         const user = localStorage.getItem('id')	
+                 axios
+                .get(`/analysis/${user}`)
+          .then(response => {
+            this.APIData = response.data
+	    console.log(APIData)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+	},
+    },
+
+
+        beforeMount() {
+	this.show_info()
     },
 }
 </script>

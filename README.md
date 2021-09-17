@@ -38,10 +38,10 @@
   'card_number':321, - тип int
   'Credit_card': 'нет',  -'да'/'нет'
   'date':'01.01.01', - тип string
-  'Amount':322, - тип float
+  'Amount':322.4, - тип float
   'currency':'RUR', - тип string
   'Purpose_of_payment': 'Пополнение PSB-RETAIL 00777782', - тип string
-  'MCC_code':'3222', - тип float
+  'MCC_code':3222.0, - тип float
   'MCC_decode':'3222 Sport Kazino' -тип string
   }
 ```

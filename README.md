@@ -2,27 +2,23 @@
 
 ## Развертка backend
 
-Инструкция для macOS и linux
+Инструкция для macOS и Linux
 
-1) установка Python https://python-scripts.com/install-python
-2)установка пакетного менеджера pip https://clck.ru/Xce6p
-3)Переход в директорию PSB
-Затем активируем виртуальное окружение:
-source venv/bin/activate
-4)Затем cd PSB-backend/PSB_PFM
-5)Установка необходимых библиотек:
-pip install -r requirements_backend.txt
-6)Проведение миграций:
-make migrate
-7)Запуск сервера:
-make run
+1) Установка Python https://python-scripts.com/install-python  
+2) Установка пакетного менеджера pip http://helpexe.ru/programmirovanie/kak-ustanovit-pip-dlja-python-v-windows-mac-i  
+3) Переход в директорию PSB
+Затем активируем виртуальное окружение: source venv/bin/activate  
+4) Затем cd PSB-backend/PSB_PFM  
+5) Установка необходимых библиотек: pip install -r requirements_backend.txt  
+6) Проведение миграций: make migrate  
+7) Запуск сервера: make run  
 
 ## Развертка frontend:
-1)Установка node.js
-2)Установка npm/любого другого пакетного менеджера
-3)Установка vue
-4)переход в директорию PSB/psb-frontend 
-5)запуск сервера npm run serve
+1) Установка node.js  
+2) Установка npm/любого другого пакетного менеджера  
+3) Установка vue  
+4) Переход в директорию PSB/psb-frontend   
+5) Запуск сервера npm run serve  
 
 *В случае наличия ошибок в новом окне терминала исполнить команду npm run lint — —fix*
 
